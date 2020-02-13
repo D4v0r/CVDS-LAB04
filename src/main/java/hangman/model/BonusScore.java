@@ -1,5 +1,7 @@
 package hangman.model;
 
+import hangman.exceptions.HangmanException;
+
 public class BonusScore implements GameScore {
 
     /**
@@ -13,6 +15,26 @@ public class BonusScore implements GameScore {
      */
     @Override
     public int calculateScore(int correctCount, int incorrectCount) {
-        return 0;
+        private static int puntaje = 0;
+
+        public int calculateScore(int correctCount, int incorrectCount)  throws HangmanException {
+            if(correctCount < 0 || incorrectCount < 0){
+                throw new (HangmanException.PARAMETROS_NEGATIVOS);
+            }
+            else if(correctCount*2<incorrectCount){
+                throw new HangmanException(HangmanException.PARAMETRO_LIMITE_PUNTUACION);
+            }
+            return correctCount*10-incorrectCount*5;
+        }
+
+
+        public int getScore() {
+            return puntaje;
+        }
+
+
+        public int getLimit() {
+            return 0;
+        }
     }
 }
