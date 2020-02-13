@@ -13,3 +13,5 @@
     * Utilizar el diccionario francés.
 	* etc...
 ![](img/guiFrench.PNG)
+![](img/gameFrench.PNG)
+
