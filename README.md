@@ -10,7 +10,7 @@
 	* Utilizar el esquema OriginalScore.
 	* Utilizar el esquema BonusScore.
 	* Utilizar el idioma francés.
-    	* Utilizar el diccionario francés.
+    * Utilizar el diccionario francés.
 	* etc...
 	
 	
