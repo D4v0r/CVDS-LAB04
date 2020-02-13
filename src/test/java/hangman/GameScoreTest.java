@@ -5,7 +5,6 @@ import hangman.model.GameScore;
 import hangman.model.OriginalScore;
 import hangman.model.BonusScore;
 import hangman.model.PowerScore;
-import org.junit.*;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -183,7 +182,7 @@ public class GameScoreTest {
 
         try{
             score.calculateScore(2,1) ;
-            score.calculateScore(0,0) ;r
+            score.calculateScore(0,0) ;
         }
         catch(HangmanException e){
             Assert.fail();
