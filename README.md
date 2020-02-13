@@ -12,3 +12,4 @@
 	* Utilizar el idioma francés.
     * Utilizar el diccionario francés.
 	* etc...
+![](img/guiFrench.PNG)
