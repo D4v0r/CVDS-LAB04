@@ -1,5 +1,7 @@
 package hangman.model;
 
+import hangman.exceptions.HangmanException;
+
 public interface GameScore {
 
     /**
@@ -7,7 +9,7 @@ public interface GameScore {
      * @param incorrectCount numero de letras incorrectas
      * @throws HangmanException.PARAMETROS_NEGATIVOS si correctCount o incorrectCount son negativos.
      */
-    int calculateScore(int correctCount, int incorrectCount);
+    int calculateScore(int correctCount, int incorrectCount) throws HangmanException;
 
 }
 
